@@ -1,1 +1,5 @@
 cp -r ../../mnt/c/git/tank-engine/Builds tank/Builds
+
+# Wine + Valgrind
+https://gitlab.winehq.org/wine/wine/-/wikis/Wine-and-Valgrind
+$ valgrind --trace-children=yes --vex-iropt-register-updates=allregs-at-mem-access wine foo.exe
