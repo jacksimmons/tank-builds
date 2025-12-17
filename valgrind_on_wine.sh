@@ -1,1 +1,1 @@
-valgrind --trace-children=yes --vex-iropt-register-updates=allregs-at-mem-access wine $1
+valgrind --leak-check=full --track-origins=yes --trace-children=yes --vex-iropt-register-updates=allregs-at-mem-access wine $1
